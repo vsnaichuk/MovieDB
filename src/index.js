@@ -46,6 +46,10 @@ async function getRecommendations(movieId) {
   const data = await apiService.fetchRecommendations(movieId);
   const moviesArr = TransformService.movies(data).slice(0, 3);
 
+  showRecommendations(moviesArr);
+}
+
+function showRecommendations(moviesArr) {
   result.insertAdjacentHTML(
     "beforeend",
     `
