@@ -31,6 +31,15 @@
   display: flex;
   color: #4caf50;
   padding: 5px 20px;
+  margin: 0;
+}
+
+.menu li:first-child {
+  padding-top: 10px;
+}
+
+.menu li:last-child {
+  padding-bottom: 10px;
 }
 
 .overview {
